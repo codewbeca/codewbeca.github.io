@@ -1,4 +1,4 @@
-/* ===== Base Styles ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@
     line-height: 1.6;
   }
   
-  /* ===== Top Social Bar ===== */
+  
   .top-bar {
     width: 100%;
     background: rgba(255, 255, 255, 0.4);
@@ -59,7 +59,7 @@
   .socials a:hover::after {
     width: 100%;
   }
-   /* ===== Hero Section ===== */
+  
   main h1 {
     font-size: 2.5rem;
     color: #7b5ea7;
@@ -81,7 +81,7 @@
     text-align: center;
   }
   
-  /* ===== Merch Section ===== */
+
   .merch {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 2rem;
@@ -115,7 +115,7 @@
     transform: translateY(-2px);
   }
   
-  /* ===== Projects Section ===== */
+ 
   .projects {
     margin-top: 4rem;
     background-color: rgba(255, 255, 255, 0.5);
@@ -173,7 +173,7 @@
     transform: translateY(-2px);
   }
   
-  /* ===== Responsive ===== */
+ 
   @media (max-width: 768px) {
     .socials {
       flex-wrap: wrap;
@@ -193,4 +193,61 @@
       padding: 1.5rem;
     }
   }
+.floating-decor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.floating-decor .float {
+  position: absolute;
+  font-size: 1.2rem;
+  color: #a86dc3;
+  animation: float 20s linear infinite;
+  opacity: 0.6;
+}
+
+.floating-decor .heart {
+  color: #c38be6;
+  font-size: 1.5rem;
+}
+
+.floating-decor .tag {
+  color: #a86dc3;
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+}
+
+.floating-decor .bug {
+  color: #b279d9;
+  font-size: 1.4rem;
+  filter: grayscale(1) brightness(1.2);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-10vh) translateX(10vw);
+    opacity: 0;
+  }
+}
+
+.floating-decor .float:nth-child(1) { left: 10%; animation-delay: 0s; }
+.floating-decor .float:nth-child(2) { left: 25%; animation-delay: 4s; }
+.floating-decor .float:nth-child(3) { left: 40%; animation-delay: 2s; }
+.floating-decor .float:nth-child(4) { left: 60%; animation-delay: 6s; }
+.floating-decor .float:nth-child(5) { left: 75%; animation-delay: 3s; }
+.floating-decor .float:nth-child(6) { left: 90%; animation-delay: 5s; }
+
   
