@@ -113,6 +113,29 @@ main section p {
   transform: translateY(-2px);
 }
 
+.projects-section {
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom, #fdf9ff, #f6e9ff);
+  border-radius: 2rem;
+  box-shadow: 0 8px 24px rgba(201, 163, 229, 0.15);
+  margin-top: 3rem;
+}
+
+.section-heading {
+  font-size: 2rem;
+  color: #a86dc3;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-subtext {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+  font-size: 1.05rem;
+  color: #5c3c72;
+}
+
 /* 🌷 Projects */
 .projects-container {
   display: flex;
