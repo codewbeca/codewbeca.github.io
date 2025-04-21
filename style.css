@@ -120,6 +120,7 @@ main section p {
   justify-content: center;
   gap: 2rem;
   padding: 2rem 1rem;
+  text-align: center;
 }
 
 .project-card {
